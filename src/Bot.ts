@@ -49,6 +49,8 @@ const loadCommands = (bot: Client) => {
           );
           commands.push(command);
 
+          log(`Loaded command: ${command.name}`);
+
           bot.createCommand({
             name: command.name,
             description: command.description,
